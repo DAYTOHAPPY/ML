@@ -42,3 +42,19 @@ git config --global user.email "email"
 现在回到gitte 上有没有刚才那个文件 有的话就 同步成功了
 ![](images/Screenshot%202023-03-14%20185432.png)
 hhh我的同步成功了 你的呢
+
+## 通过pip安装python 第三方库 
+### 更改pip源
+#### Windows 
+在``C:\Users\username\AppData\Roaming\pip``下创建一个``pip.ini``的文件把下面的代码复制进去
+```ini
+[global]
+timeout = 6000
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+trusted-host = pypi.tuna.tsinghua.edu.cn
+```
+保存退出 这样子pip源就换好了
+
+#### 安装命令
+
+``pip install name``
